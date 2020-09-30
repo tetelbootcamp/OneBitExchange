@@ -3,4 +3,4 @@ document.addEventListener('turbolinks:load', function(){
     let [result] = event.detail
     document.getElementById('result').value = result.value
   })
-}
+})
