@@ -1,10 +1,10 @@
 <div class='exchange_box col-sm-12'>
  <div class='card'>
-​
+
    <div class='card-header text-center'>
-    Simule sua conversão
+      Simule sua conversão
    </div>
-​
+
    <div class='card-block'>
     <%= form_with url: "/convert", method: :get, id: 'exchange_form' do |f| %>
        <div class='local_currency'>
@@ -12,12 +12,12 @@
            <p class='title'>Moeda Local</p>
           <%= f.select 'source_currency', options_for_select(currency_list, 'BRL'), {}, { class: 'form-control', id: 'source_currency' } %>
          </div>
-​
+
          <div class='form-group'>
           <%= f.number_field 'amount', id: 'amount', class: 'form-control', placeholder: 'Quantidade ($10)', step: 'any', required: true %>
          </div>
        </div>
-                   
+                          
        <div class='destination_currency'>
          <div class='form-group'>
            <p class='title'>Moeda Pretendida</p>
