@@ -2,6 +2,7 @@ require 'rest-client'
 require 'json'
 
 class ExchangeService
+
   def initialize(source_currency, target_currency, amount)
   	@source_currency = source_currency
   	@target_currency = target_currency
