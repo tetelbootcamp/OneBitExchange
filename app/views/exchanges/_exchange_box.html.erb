@@ -5,7 +5,7 @@
       Simule sua conversão
    </div>
 
-   <div class='card-block'>
+   <div class='card-block bg-gradient-secondary'>
     <%= form_with url: "/convert", method: :get, id: 'exchange_form' do |f| %>
        <div class='local_currency'>
          <div class='form-group'>
@@ -28,7 +28,7 @@
          </div>
        </div>
        <div>
-        <%= f.submit "CONVERTER", class: 'btn btn-primary btn-exchange col-md-12' %>
+          <%= f.submit "CONVERTER", class: 'btn btn-dark col-md-12' %>
        </div>
     <% end %>
    </div>
